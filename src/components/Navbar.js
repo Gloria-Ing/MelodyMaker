@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from "../images/logo.png";
+import logo from "../images/1.png";
 import { Link } from "react-router-dom";
 import "../Styles/Navbar.css";
 import ReorderIcon from '@mui/icons-material/Reorder';
@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div className='navbar'>
         <div className='leftside'>
-            <img src={logo}/>
+            <img className='logo' src={logo}/>
         </div>
         <div className='rightside'>
             <Link to="/">Home</Link>

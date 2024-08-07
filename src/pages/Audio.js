@@ -1,7 +1,10 @@
 import React from 'react'
 import audio from "../images/m.jpg";
 import "../Styles/Audio.css";
+import Box from '@mui/material/Box';
 import List from '@mui/material/List';
+import { grey } from "@mui/material/colors";
+
 
 function Audio() {
   return (
@@ -9,10 +12,24 @@ function Audio() {
     <div className='audio'>
       <div className='leftside'>
       <h3>Audio Music Production</h3>
-        <p><List>○ <b>Recording:</b> State-of-the-art recording facilities equipped with the latest technology to capture pristine sound.</List>
-              <List>  ○<b>Mixing and Mastering:</b> Expert engineers ensure your music sounds polished and professional.</List>
-               <List> ○<b>Composition and Arranging: </b>Talented composers and arrangers to help bring your musical vision to life.</List>
-                </p>
+      <Box
+      height={202}
+      width={380}
+      my={1}
+      display="flex"
+      alignItems="center"
+      borderRadius={2}
+      bgcolor={grey}
+      paddingTop={40}
+      gap={4}
+      p={2}
+      sx={{ border: '2px solid grey' }}
+    >
+            <List><b>○	Recording:</b> State-of-the-art recording facilities equipped with the latest technology to capture pristine sound.</List>
+            <List><b>○	Mixing and Mastering:</b> Expert engineers ensure your music sounds polished and professional.</List>
+            <List><b>○	Composition and Arranging:</b> Talented composers and arrangers to help bring your musical vision to life.</List>
+
+    </Box>
           <button>Show More</button>
       
         

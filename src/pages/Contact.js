@@ -1,30 +1,32 @@
 import React from 'react'
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import EmailIcon from '@mui/icons-material/Email';
+import Box from '@mui/material/Box';
+import List from '@mui/material/List';
+import { grey } from "@mui/material/colors";
 import "../Styles/contact.css";
 function Contact() {
   return (
     <div className='contact'>
       <div className='leftside'>
       <h3>MelodyMakers Media welcomes clients from all over the world.</h3>
-      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-          <FacebookIcon />
-        </a>
-        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-          <TwitterIcon />
-        </a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
-          <LinkedInIcon />
-        </a>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-          <InstagramIcon />
-        </a>
-        <a href="ingloria446@gmail.com" target="_blank" rel="noopener noreferrer">
-          <EmailIcon />
-        </a> 
+      
+      <Box
+      height={202}
+      width={380}
+      my={3}
+      display="flex"
+      alignItems="center"
+      borderRadius={2}
+      bgcolor={grey}
+      paddingTop={40}
+      gap={4}
+      p={2}
+      sx={{ border: '2px solid grey' }}
+    >
+            <List><b>○	Recording:</b> State-of-the-art recording facilities equipped with the latest technology to capture pristine sound.</List>
+            <List><b>○	Mixing and Mastering:</b> Expert engineers ensure your music sounds polished and professional.</List>
+            <List><b>○	Composition and Arranging:</b> Talented composers and arrangers to help bring your musical vision to life.</List>
+
+    </Box>
         
 
       </div>

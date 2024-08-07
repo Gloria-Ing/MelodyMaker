@@ -30,11 +30,6 @@
     -moz-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out; 
 }
-.section-subtitle{
-    white-space: pre-line;
-
-
-}
 .all{
     display: flex;
     padding-bottom: 40px;
@@ -51,7 +46,10 @@
     padding: 6px 6px;
 }
 p{
-    width: 50%;
+    width: 70%;
     height: auto;
+    padding: 20px;
     text-align: center;
+    padding-right: 40px;
+    
 }
