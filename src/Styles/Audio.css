@@ -1,0 +1,21 @@
+.audio{
+    width: 100%;
+    display: flex;
+}
+.audio.leftside{
+    color: black;
+    width: 50%;
+    height: auto;
+    padding: 40px;
+
+}
+.offer{
+    text-align: center;
+    color:black;
+}
+.offer p{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
