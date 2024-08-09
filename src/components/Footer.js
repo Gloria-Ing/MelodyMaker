@@ -8,11 +8,22 @@ import List from '@mui/material/List';
 
 function Footer() {
   return (
-    <div className='footer'>
+    
+    <div>
+      <div className='footer'>
          <div>
             <img  className='log'src={logo}/></div>
+        <div>
+          <a href='#'>Audio Music</a>
+          <a href='#'> Video Music</a>
+          <a href='#'>Filming</a>
+        </div>
+        <div>
+          <a>Recording</a>
+          <a>Composition and Arranging</a>
+          <a>Mixing and Mastering</a>
+        </div>
         
-       <div> <p>© 2024 MelodyMaker Media</p></div>
         
       <div>
         <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
@@ -25,7 +36,13 @@ function Footer() {
           <EmailIcon />
         </a>
       </div>
+      <div> <p>© 2024 MelodyMaker Media</p></div>
       </div>
+      
+
+      </div>
+      
+      
       
 
       

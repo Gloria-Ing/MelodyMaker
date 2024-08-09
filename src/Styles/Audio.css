@@ -1,21 +1,35 @@
 .audio{
     width: 100%;
     display: flex;
+    justify-items: center; /* Center horizontally */
+    align-items: center;
+    gap: 60px; 
+    max-width: 1200px; /* Set a maximum width for your content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px;
+    margin-right: -120px;
 }
 .audio.leftside{
     color: black;
     width: 50%;
     height: auto;
-    padding: 40px;
+    
+}
+.audio.rightside{
+    
+    padding: 0 100px;
 
+    
 }
 .offer{
-    text-align: center;
-    color:black;
+    width: 300px;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
-.offer p{
-    text-align: center;
-    width: 100%;
+.final{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }

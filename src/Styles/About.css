@@ -5,7 +5,6 @@
 }
 .team-item{
     background: #fff;
-    text-align: center;
     margin: 20px 0;
     padding: 50px 20px 40px 20px;
     border-radius: 8px 8px;
@@ -14,6 +13,7 @@
     -ms-transition: all 00.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
+    
 }
 .team-item:hover{
     background: #3956de;
@@ -23,18 +23,22 @@
 .team-item h1{
     margin: 20px 0 1px 0 !important;
     color: #454545;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out; 
+    justify-content: center;
+    justify-items: center;
+    
 }
 .all{
     display: flex;
     padding-bottom: 40px;
     padding: 20px;
     justify-content: space-evenly;
+    
     
 
 }
@@ -51,5 +55,5 @@ p{
     padding: 20px;
     text-align: center;
     padding-right: 40px;
-    
+    margin-right: -120px;
 }

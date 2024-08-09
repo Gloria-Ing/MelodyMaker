@@ -2,6 +2,7 @@
     width: 100%;
     height:90yh;
     display: flex;
+    margin-right: -120px;
 
 }
 .contact .leftside {

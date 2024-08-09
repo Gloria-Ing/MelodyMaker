@@ -1,10 +1,16 @@
 .footer{
-    width: 100%;
+    max-width: 1200px; /* Set a maximum width for your content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add space on the left and right sides */
     background-color: black;
-    display: flex;
     justify-items: center;
-    justify-content: space-between;
-    padding: 20px 20px;
+        display: grid;
+        grid-template-columns: 1fr; /* One column layout */
+        row-gap: 20px; /* Space between sections */
+    
+    
+    
+    
     
 }
 .log{
@@ -20,4 +26,7 @@ a{
     text-decoration: none;
     display: inline;
 
+}
+List{
+    color: white;
 }

@@ -3,6 +3,7 @@ import logo from "../images/1.png";
 import { Link } from "react-router-dom";
 import "../Styles/Navbar.css";
 import ReorderIcon from '@mui/icons-material/Reorder';
+import Button from '@mui/material/Button';
 
 function Navbar() {
   return (
@@ -22,7 +23,9 @@ function Navbar() {
 
 </div>
             <Link to="/about">About Us</Link>
-            <Link to="/contact">Contact Us</Link>
+            <Button  className='navcontact' href="/Contact">
+      Contact Us
+    </Button>
             <button>
             <ReorderIcon/>
             </button>

@@ -1,21 +1,31 @@
 .video{
     width: 100%;
     display: flex;
+    justify-items: center; /* Center horizontally */
+    align-items: center;
+    gap: 60px; 
+    max-width: 1200px; /* Set a maximum width for your content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px;
+    margin-right: -120px;
 }
-.video.leftside{
+video.leftside{
     color: black;
     width: 50%;
     height: auto;
-    padding: 40px;
+    margin-right: -120px;
+    
+}
+.video.rightside{
+    
+    padding: 0 100px;
 
+    
 }
-.offer{
-    text-align: center;
-    color:black;
-}
-.offer p{
-    text-align: center;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.contactbutton{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+
 }

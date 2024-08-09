@@ -4,13 +4,26 @@ import "../Styles/Audio.css";
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import { grey } from "@mui/material/colors";
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+import { styled } from '@mui/material/styles';
+import Button from '@mui/material/Button';
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
+
 
 
 function Audio() {
   return (
     <div>
     <div className='audio'>
-      <div className='leftside'>
+      <div>
       <h3>Audio Music Production</h3>
       <Box
       height={202}
@@ -30,7 +43,7 @@ function Audio() {
             <List><b>○	Composition and Arranging:</b> Talented composers and arrangers to help bring your musical vision to life.</List>
 
     </Box>
-          <button>Show More</button>
+          
       
         
       </div>
@@ -38,17 +51,39 @@ function Audio() {
        <img className='image2' src={audio}/>
      
     </div>
-    </div>
-    <div className='offer'>
-        <h4>We Offer you a special features here</h4>
-        <p><list>●	Creative Collaboration: We work closely with artists, musicians, and filmmakers to understand their unique vision and bring it to fruition.</list>
-           <list>●	Cutting-Edge Technology: Our studio is equipped with the latest software and hardware to deliver top-notch audio and video quality.</list>
-           <list>●	Diverse Projects: From music videos and documentaries to commercials and live events, 3M handles a wide range of production projects.</list>
-      </p>
-      <button>Contact Us</button>
-      </div>
+
+
+
+
+
+  
+ 
+
+  
+           
     
+      </div>
+      <div className='final'>
+    <Box sx={{ width: '50%' }}>
+      <Stack spacing={2}>
+      <h4>We Offer you a special features here</h4>
+        <Item><b>Recording: </b>State-of-the-art recording facilities equipped with the latest technology to capture pristine sound.</Item>
+        <Item><b>Mixing and Mastering:</b> Expert engineers ensure your music sounds polished and professional.</Item>
+        <Item><b>Composition and Arranging: </b>Talented composers and arrangers to help bring your musical vision to life.</Item>
+      </Stack>
+    </Box>
     </div>
+    <div className='contactbutton'>
+      <center>
+    <Button  href="/Contact">
+      Contact Us
+    </Button>
+  
+    </center>
+    </div>
+    </div>
+    
+    
     
   )
 }

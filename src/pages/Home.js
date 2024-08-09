@@ -8,19 +8,18 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import { grey } from "@mui/material/colors";
-import { space } from "postcss/lib/list";
+
 
 function Home() {
   return (
     <div>
-      <div className='home'></div>
       <div className='headercontainer'>
-      <h5>MelodyMakers Media, affectionately known as 3M, 
+      <h6>MelodyMakers Media, affectionately known as 3M, 
         is a cutting-edge studio specializing in audio music
          and video production. Our mission is to create high-quality, 
          captivating content that resonates with audiences worldwide. 
          With a passion for innovation and a commitment to excellence, 
-        3M is where creativity meets technology.</h5>
+        3M is where creativity meets technology.</h6>
         <div>
           <img className='imag' src={image}/>
         </div>
