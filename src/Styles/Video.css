@@ -1,31 +1,74 @@
-.video{
+/* Base Styles */
+.video {
     width: 100%;
     display: flex;
-    justify-items: center; /* Center horizontally */
+    justify-content: center;
     align-items: center;
     gap: 60px; 
-    max-width: 1200px; /* Set a maximum width for your content */
-    margin: 0 auto; /* Center the container */
+    max-width: 1200px; 
+    margin: 0 auto; 
     padding: 0 20px;
     margin-right: -120px;
 }
-video.leftside{
+
+.video.leftside {
     color: black;
     width: 50%;
     height: auto;
     margin-right: -120px;
-    
 }
-.video.rightside{
-    
-    padding: 0 100px;
 
-    
+.video.rightside {
+    padding: 0 100px;
 }
-.contactbutton{
+
+.contactbutton {
+    display: flex;
     align-items: center;
     justify-content: center;
-    justify-items: center;
     padding: 20px;
+}
 
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    .video {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Reduce gap for better spacing */
+    }
+
+    .video.leftside, .video.rightside {
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0; /* Remove negative margin */
+        padding: 0 20px; /* Reduce padding */
+    }
+
+    .video.rightside {
+        padding: 0; /* Remove extra padding */
+    }
+
+    .contactbutton {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Responsive Design for Smartphones */
+@media (max-width: 480px) {
+    .video {
+        flex-direction: column; /* Stack items vertically */
+        gap: 15px; /* Further reduce gap */
+    }
+
+    .video.leftside, .video.rightside {
+        width: 100%; /* Full width on smartphones */
+        margin-right: 0; /* Remove negative margin */
+        padding: 0 10px; /* Further reduce padding */
+    }
+
+    .video.rightside {
+        padding: 0; /* Remove extra padding */
+    }
+
+    .contactbutton {
+        width: 100%; /* Full width for the button container */
+    }
 }

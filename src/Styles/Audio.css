@@ -1,35 +1,98 @@
-.audio{
+/* Base Styles */
+.audio {
     width: 100%;
     display: flex;
-    justify-items: center; /* Center horizontally */
+    justify-content: center;
     align-items: center;
-    gap: 60px; 
-    max-width: 1200px; /* Set a maximum width for your content */
-    margin: 0 auto; /* Center the container */
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0 20px;
-    margin-right: -120px;
 }
-.audio.leftside{
+
+.audio.leftside {
     color: black;
     width: 50%;
     height: auto;
-    
 }
-.audio.rightside{
-    
-    padding: 0 100px;
 
-    
+.audio.rightside {
+    padding: 0 100px;
 }
-.offer{
+
+.offer {
     width: 300px;
     background-color: white;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
 }
-.final{
+
+.final {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.contactbutton {
+    margin-top: 20px;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    .audio {
+        flex-direction: column; /* Stack items vertically on tablets */
+        gap: 20px; /* Adjust gap */
+    }
+
+    .audio.leftside, .audio.rightside {
+        width: 100%; /* Full width on smaller screens */
+        padding: 0 20px; /* Reduce padding */
+    }
+
+    .audio.rightside {
+        padding: 0; /* Remove extra padding */
+    }
+
+    .final {
+        width: 100%; /* Ensure the final section is full width */
+        flex-direction: column; /* Stack items vertically */
+        padding: 0 20px;
+    }
+
+    .contactbutton {
+        width: 100%;
+    }
+}
+
+/* Responsive Design for Smartphones */
+@media (max-width: 480px) {
+    .audio {
+        flex-direction: column; /* Stack items vertically */
+        gap: 15px; /* Further reduce gap */
+    }
+
+    .audio.leftside, .audio.rightside {
+        width: 100%; /* Full width on smartphones */
+        padding: 0 10px; /* Further reduce padding */
+    }
+
+    .audio.rightside {
+        padding: 0; /* Remove extra padding */
+    }
+
+    .final {
+        width: 100%; /* Ensure the final section is full width */
+        flex-direction: column; /* Stack items vertically */
+        padding: 0 10px;
+    }
+
+    .contactbutton {
+        width: 100%;
+    }
+
+    img.image2 {
+        max-width: 100%; /* Make the image responsive */
+        height: auto; /* Keep aspect ratio */
+    }
 }

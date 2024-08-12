@@ -1,0 +1,100 @@
+/* General Styles */
+.section-white {
+    background: #fff;
+    padding: 70px 0;
+}
+
+.team-item {
+    background: #fff;
+    margin: 20px 0;
+    padding: 50px 20px 40px 20px;
+    border-radius: 8px;
+    transition: all 0.25s ease-in-out;
+}
+p {
+    width: 50%; /* Full width for paragraphs on small screens */
+    padding: 10px; /* Adjust padding for better readability */
+    margin: 10px 0; /* Add margin for spacing between paragraphs */
+    text-align: center; /* Center text */
+    box-sizing: border-box;
+    align-items: center;
+    margin-left: 300px;
+}
+
+.team-item:hover {
+    background: #3956de;
+    color: white;
+}
+
+.team-item h1 {
+    margin: 20px 0 1px 0 !important;
+    color: #454545;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.25s ease-in-out;
+    text-align: center; /* Center title text */
+}
+
+.all {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    padding: 20px;
+    justify-content: space-evenly; /* Space items evenly */
+}
+
+/* Card styling to ensure cards are responsive */
+.card {
+    max-width: 200px; /* Fixed card width for consistency */
+    margin: 10px; /* Margin around each card */
+}
+
+.card img {
+    width: 100%; /* Ensure images fill the card */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Cover the area without distortion */
+}
+
+.card-content {
+    padding: 10px; /* Adjust padding */
+}
+
+/* Responsive Design for Tablets and Smartphones */
+@media (max-width: 992px) {
+    .all {
+        justify-content: center; /* Center items on smaller screens */
+    }
+
+    .card {
+        max-width: 150px; /* Reduce card width on tablets */
+    }
+
+    .team-item h1 {
+        font-size: 18px; /* Slightly smaller font size on tablets */
+    }
+}
+
+@media (max-width: 600px) {
+    .all {
+        padding: 10px; /* Adjust padding for smartphones */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .card {
+        max-width: 90%; /* Ensure cards are not too wide */
+        margin: 10px 0; /* Margin for vertical stacking */
+    }
+
+    .team-item h1 {
+        font-size: 16px; /* Smaller font size on smartphones */
+    }
+
+    p {
+        width: 100%; /* Full width for paragraphs on small screens */
+        padding: 10px; /* Adjust padding for better readability */
+        margin: 10px 0; /* Add margin for spacing between paragraphs */
+        text-align: center; /* Center text */
+        box-sizing: border-box; /* Ensure padding and margin do not affect width */
+    }
+}

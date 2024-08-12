@@ -1,0 +1,73 @@
+.contact {
+    display: inline;
+    grid-template-columns: 1fr; /* Single column layout by default */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    max-width: 1200px; /* Max width for large screens */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.leftside, .rightside {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.rightside {
+    background-color: #f9f9f9; /* Optional: light background for form section */
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design for Tablets and Smartphones */
+@media (min-width: 768px) {
+    .contact {
+        grid-template-columns: repeat(2, 1fr); /* Two columns layout on tablets and larger screens */
+    }
+
+    .rightside {
+        grid-column: 1; /* Ensure the form stays in the first column */
+    }
+
+    .leftside {
+        grid-column: 2; /* Ensure the left-side content stays in the second column */
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items horizontally */
+    }
+
+    .leftside, .rightside {
+        width: 100%; /* Full width for responsiveness */
+        max-width: 600px; /* Max width for larger screens */
+    }
+}

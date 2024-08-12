@@ -1,11 +1,10 @@
 
 import './App.css';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer.js';
-import Home from './pages/Home';
-import Service from './pages/Service';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import Navbar from './components/Navbars';
+import Footer from './components/Footers.js';
+import Home from './pages/Homes';
+import About from './pages/Abouts';
+import Contact from './pages/Contacts';
 import Audio from './pages/Audio';
 import Video from './pages/Video';
 
@@ -18,7 +17,6 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" exact element={<Home/>} />
-        <Route path="/Service" exact element={<Service/>} />
         <Route path="/About" exact element={<About/>} />
         <Route path="/Contact" exact element={<Contact/>} />
         <Route path="/Audio" exact element={<Audio/>} />
