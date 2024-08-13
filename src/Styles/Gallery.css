@@ -1,0 +1,83 @@
+/* Gallery.css */
+
+.container {
+    max-width: 900px; /* Adjusted to be more compact */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  .contact-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .contact-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for equal width */
+    gap: 15px;
+  }
+  
+  .image, .image1, .image2, .image3 {
+    width: 100%; /* Full width of the grid cell */
+    height: 200px; /* Fixed height for visibility */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+  }
+  
+  .image:hover, .image1:hover, .image2:hover, .image3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .content {
+      font-size: 16px;
+    }
+    .images {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px;
+    }
+    .content {
+      font-size: 14px;
+    }
+    .images {
+      grid-template-columns: 1fr; /* Single column on small screens */
+    }
+    .image, .image1, .image2, .image3 {
+      height: 180px; /* Adjusted height for better visibility on small screens */
+    }
+  }
+  

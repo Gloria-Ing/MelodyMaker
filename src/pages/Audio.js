@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import audio from "../images/m.jpg";
 import "../Styles/Audio.css";
 import Box from '@mui/material/Box';
@@ -8,6 +8,8 @@ import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
+import ListItem from '@mui/material/ListItem';
+import Typography from '@mui/material/Typography';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -17,75 +19,66 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-
-
 function Audio() {
   return (
-    <div>
-    <div className='audio'>
-      <div>
-      <h3>Audio Music Production</h3>
+    <Box className='audio' sx={{ textAlign: 'center', padding: '20px' }}>
+      <Typography variant="h4" gutterBottom>
+        Audio Music Production
+      </Typography>
+
       <Box
-      height={202}
-      width={380}
-      my={1}
-      display="flex"
-      alignItems="center"
-      borderRadius={2}
-      bgcolor={grey}
-      paddingTop={40}
-      gap={4}
-      p={2}
-      sx={{ border: '2px solid grey' }}
-    >
-            <List><b>○	Recording:</b> State-of-the-art recording facilities equipped with the latest technology to capture pristine sound.</List>
-            <List><b>○	Mixing and Mastering:</b> Expert engineers ensure your music sounds polished and professional.</List>
-            <List><b>○	Composition and Arranging:</b> Talented composers and arrangers to help bring your musical vision to life.</List>
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
+        gap={2}
+        sx={{ maxWidth: 600, margin: '0 auto', border: '2px solid grey', borderRadius: 2, padding: 2, bgcolor: grey[200] }}
+      >
+        <List sx={{ padding: 0 }}>
+          <ListItem disableGutters>
+            <Typography variant="body1">
+              <b>● Recording:</b> State-of-the-art recording facilities equipped with the latest technology to capture pristine sound.
+            </Typography>
+          </ListItem>
+          <ListItem disableGutters>
+            <Typography variant="body1">
+              <b>● Mixing and Mastering:</b> Expert engineers ensure your music sounds polished and professional.
+            </Typography>
+          </ListItem>
+          <ListItem disableGutters>
+            <Typography variant="body1">
+              <b>● Composition and Arranging:</b> Talented composers and arrangers to help bring your musical vision to life.
+            </Typography>
+          </ListItem>
+        </List>
+      </Box>
 
-    </Box>
-          
-      
+      <Box className='rightside' sx={{ marginTop: 3 }}>
+        <img className='image2' src={audio} alt="Audio production" style={{ maxWidth: '50%', height: 'auto' }} />
+      </Box>
+
+      <Box sx={{ mt: 4, maxWidth: 600, margin: '0 auto' }}>
+        <Typography variant="h5" gutterBottom>
+          We Offer You Special Features Here
+        </Typography>
+        <Stack spacing={2}>
+        <Item><Typography variant="body1"><b>●	Creative Collaboration:</b> We work closely with artists, musicians, and filmmakers to understand their unique vision and bring it to fruition.</Typography></Item>
+          <Item><Typography variant="body1"><b>●	Cutting-Edge Technology: </b>Our studio is equipped with the latest software and hardware to deliver top-notch audio and video quality.</Typography></Item>
+          <Item><Typography variant="body1"><b>●	Diverse Projects:</b> From music videos and documentaries to commercials and live events, 3M handles a wide range of production projects.</Typography></Item>
+        </Stack>
+      </Box>
         
-      </div>
-       <div className='rightside'>
-       <img className='image2' src={audio}/>
-     
-    </div>
-
-
-
-
-
+          
+          <div className='content'>
+       
+       <p>Located at Gisenyi, Rwanda, MelodyMakers Media welcomes clients from all over the world.</p>
+       <p>For inquiries, project quotes, or to book a session, please use the button below to contact us:</p>
+       <a href="tel:+250781959114" className="contact-button">Contact</a>
+     </div>
+       
+      </Box>
   
- 
-
-  
-           
     
-      </div>
-      <div className='final'>
-    <Box sx={{ width: '50%' }}>
-      <Stack spacing={2}>
-      <h4>We Offer you a special features here</h4>
-        <Item><b>Recording: </b>State-of-the-art recording facilities equipped with the latest technology to capture pristine sound.</Item>
-        <Item><b>Mixing and Mastering:</b> Expert engineers ensure your music sounds polished and professional.</Item>
-        <Item><b>Composition and Arranging: </b>Talented composers and arrangers to help bring your musical vision to life.</Item>
-      </Stack>
-    </Box>
-    </div>
-    <div className='contactbutton'>
-      <center>
-    <Button  href="/Contact">
-      Contact Us
-    </Button>
-  
-    </center>
-    </div>
-    </div>
-    
-    
-    
-  )
+  );
 }
 
-export default Audio
+export default Audio;

@@ -6,9 +6,11 @@ import '../Styles/Contacts.css';
 
 function Contact() {
   return (
-    <div className='contact'>
+    <div >
+      <div className='contact'>
       <div className='leftside'>
         <h3>MelodyMakers Media welcomes clients from all over the world.</h3>
+        
         <Box
           height={202}
           width='100%' /* Full width for responsiveness */
@@ -37,8 +39,15 @@ function Contact() {
           <input name='email' placeholder='Enter your email...' type='email'/>
           <label htmlFor='message'>Message</label>
           <textarea rows='6' placeholder='Enter message.....' name='message' required></textarea>
-          <button type='submit'>Send Message</button>
+          <a href="sms:+250781959114" className="sms-button">Send Message</a> {/* SMS Button */}
         </form>
+      </div>
+      </div>
+      <div className='content'>
+       
+        <p>Located at Gisenyi, Rwanda, MelodyMakers Media welcomes clients from all over the world.</p>
+        <p>For inquiries, project quotes, or to book a session, please use the button below to contact us:</p>
+        <a href="tel:+250781959114" className="contact-button">Contact</a>
       </div>
     </div>
   );

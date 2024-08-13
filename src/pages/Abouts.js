@@ -105,6 +105,12 @@ function About() {
           </Card>
         </div>
       </div>
+      <div className='content'>
+       
+       <p>Located at Gisenyi, Rwanda, MelodyMakers Media welcomes clients from all over the world.</p>
+       <p>For inquiries, project quotes, or to book a session, please use the button below to contact us:</p>
+       <a href="tel:+250781959114" className="contact-button">Contact</a>
+     </div>
     </div>
   );
 }

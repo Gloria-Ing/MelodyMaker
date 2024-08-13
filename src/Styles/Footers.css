@@ -1,68 +1,89 @@
-/* General Footer Styles */
+/* General Footer Styling */
 .footer {
-    width: 100%; /* Full width of the viewport */
-    background-color: black;
-    padding: 20px; /* Padding around the content */
-    color: white;
-    box-sizing: border-box; /* Include padding in width calculation */
-    display: grid;
-    grid-template-columns: 1fr; /* Single column layout by default */
-    gap: 20px; /* Space between sections */
-    text-align: center; /* Center text by default */
-}
-
-/* Logo Styling */
-.log {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto; /* Center the logo */
-}
-
-/* Footer Links Styling */
-.footer a {
-    color: white;
-    padding: 10px 15px;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo img {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: whitesmoke;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    color: #ccc;
     text-decoration: none;
-    display: inline-block; /* Ensure links are block-level for spacing */
-}
-
-/* Responsive Layout for Tablets and Desktops */
-@media (min-width: 600px) {
-    .footer {
-        grid-template-columns: repeat(3, 1fr); /* 3-column layout */
-        text-align: left; /* Align text to the left for larger screens */
-        max-width: 100%; /* Ensure it spans full width */
-        margin: 0 auto; /* Center horizontally if needed */
+  }
+  
+  .footer-links a:hover {
+    color: #f0a500;
+  }
+  
+  .footer-social {
+    flex: 1 1 200px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-social h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: #ccc;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: whitesmoke;
+  }
+  
+  .footer-copyright {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
     }
-
-    .footer > div {
-        text-align: left; /* Align items to the left in each column */
+  
+    .footer-logo img {
+      margin-bottom: 30px;
     }
-
-    .footer .footer-social {
-        grid-column: 1 / -1; /* Span the full width of the footer */
-        text-align: center; /* Center the social links */
-    }
-
-    .footer p {
-        grid-column: 1 / -1; /* Span the full width of the footer */
-        text-align: center; /* Center the copyright text */
-    }
-}
-
-/* Responsive Layout for Smartphones */
-@media (max-width: 599px) {
-    .footer {
-        grid-template-columns: 1fr; /* Single column layout */
-        text-align: center; /* Center text */
-    }
-
-    .footer > div {
-        text-align: center; /* Center align items */
-    }
-
-    .footer a {
-        display: block; /* Stack links vertically */
-        padding: 10px 0; /* Adjust padding for vertical stacking */
-    }
-}
+  }
+  

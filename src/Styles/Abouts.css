@@ -1,62 +1,79 @@
 /* General Styles */
 .section-white {
-    background: #fff;
-    padding: 70px 0;
+    background: #f4f4f4; /* Light grey background for a softer look */
+    padding: 60px 0;
+    text-align: center; /* Center-align all text in the section */
 }
 
-.team-item {
-    background: #fff;
-    margin: 20px 0;
-    padding: 50px 20px 40px 20px;
-    border-radius: 8px;
-    transition: all 0.25s ease-in-out;
-}
-p {
-    width: 50%; /* Full width for paragraphs on small screens */
-    padding: 10px; /* Adjust padding for better readability */
-    margin: 10px 0; /* Add margin for spacing between paragraphs */
-    text-align: center; /* Center text */
-    box-sizing: border-box;
-    align-items: center;
-    margin-left: 300px;
-}
-
-.team-item:hover {
-    background: #3956de;
-    color: white;
-}
-
-.team-item h1 {
-    margin: 20px 0 1px 0 !important;
-    color: #454545;
-    font-size: 20px;
+.section-title {
+    font-size: 36px;
     font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
     text-transform: uppercase;
-    transition: all 0.25s ease-in-out;
-    text-align: center; /* Center title text */
 }
 
+.section-subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto; /* Center the subtitle text */
+}
+
+p {
+    max-width: 800px;
+    margin: 10px auto; /* Center paragraphs */
+    padding: 10px;
+    text-align: justify; /* Justify text for a clean look */
+    color: #666; /* Softer text color */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Card Container */
 .all {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap */
     padding: 20px;
-    justify-content: space-evenly; /* Space items evenly */
+    justify-content: space-around; /* Space items evenly */
 }
 
-/* Card styling to ensure cards are responsive */
+/* Card Styling */
 .card {
-    max-width: 200px; /* Fixed card width for consistency */
-    margin: 10px; /* Margin around each card */
+    max-width: 280px; /* Increase card width for better visibility */
+    margin: 15px; /* Margin around each card */
+    border-radius: 10px; /* Rounded corners for cards */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effects */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
 
 .card img {
     width: 100%; /* Ensure images fill the card */
     height: 200px; /* Fixed height for consistency */
     object-fit: cover; /* Cover the area without distortion */
+    border-radius: 10px 10px 0 0; /* Rounded top corners for images */
 }
 
 .card-content {
-    padding: 10px; /* Adjust padding */
+    padding: 15px; /* Increase padding for better spacing */
+}
+
+.card-content h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333; /* Darker color for card titles */
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #777; /* Softer color for card text */
 }
 
 /* Responsive Design for Tablets and Smartphones */
@@ -66,11 +83,15 @@ p {
     }
 
     .card {
-        max-width: 150px; /* Reduce card width on tablets */
+        max-width: 200px; /* Adjust card width on tablets */
     }
 
-    .team-item h1 {
-        font-size: 18px; /* Slightly smaller font size on tablets */
+    .section-title {
+        font-size: 32px; /* Slightly smaller title size */
+    }
+
+    .section-subtitle {
+        font-size: 16px; /* Slightly smaller subtitle size */
     }
 }
 
@@ -86,15 +107,19 @@ p {
         margin: 10px 0; /* Margin for vertical stacking */
     }
 
-    .team-item h1 {
-        font-size: 16px; /* Smaller font size on smartphones */
+    .section-title {
+        font-size: 28px; /* Smaller title size on smartphones */
     }
 
-    p {
-        width: 100%; /* Full width for paragraphs on small screens */
-        padding: 10px; /* Adjust padding for better readability */
-        margin: 10px 0; /* Add margin for spacing between paragraphs */
-        text-align: center; /* Center text */
-        box-sizing: border-box; /* Ensure padding and margin do not affect width */
+    .section-subtitle {
+        font-size: 14px; /* Smaller subtitle size */
+    }
+
+    .card-content h6 {
+        font-size: 16px; /* Smaller font size for card titles */
+    }
+
+    .card-content p {
+        font-size: 13px; /* Smaller font size for card text */
     }
 }

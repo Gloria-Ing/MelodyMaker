@@ -1,10 +1,10 @@
 .contact {
-    display: inline;
-    grid-template-columns: 1fr; /* Single column layout by default */
-    gap: 20px; /* Space between grid items */
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    max-width: 1200px; /* Max width for large screens */
-    margin: 0 auto; /* Center horizontally */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
 }
 
 .leftside, .rightside {
@@ -13,7 +13,13 @@
 }
 
 .rightside {
-    background-color: #f9f9f9; /* Optional: light background for form section */
+    background-color: #f9f9f9;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 form {
@@ -27,6 +33,9 @@ input, textarea, button {
     border-radius: 5px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+.content{
+    display:flexbox;
 }
 
 textarea {
@@ -44,30 +53,42 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Responsive Design for Tablets and Smartphones */
-@media (min-width: 768px) {
-    .contact {
-        grid-template-columns: repeat(2, 1fr); /* Two columns layout on tablets and larger screens */
-    }
-
-    .rightside {
-        grid-column: 1; /* Ensure the form stays in the first column */
-    }
-
-    .leftside {
-        grid-column: 2; /* Ensure the left-side content stays in the second column */
-    }
+/* Styling for the Send Message button */
+.sms-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056b3; /* Green background */
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from link */
+    font-size: 16px;
 }
 
-@media (max-width: 768px) {
+.sms-button:hover {
+    background-color:  #0056b3;/* Darker green on hover */
+}
+
+/* Responsive Design for Tablets and Larger Screens */
+@media (min-width: 768px) {
     .contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Center items horizontally */
+        flex-direction: row;
     }
 
     .leftside, .rightside {
-        width: 100%; /* Full width for responsiveness */
-        max-width: 600px; /* Max width for larger screens */
+        width: 50%; /* Each side takes up half the width */
+    }
+}
+
+/* Responsive Design for Smartphones */
+@media (max-width: 767px) {
+    .leftside, .rightside {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .leftside {
+        margin-bottom: 20px; /* Add space between sections */
     }
 }
