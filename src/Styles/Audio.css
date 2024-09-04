@@ -1,6 +1,7 @@
 .audio {
     padding: 20px;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .image2 {
@@ -12,5 +13,20 @@
   
   .contact-button {
     margin-top: 20px;
+  }
+  .contact-button {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Optional: Set the text color to white for contrast */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .contact-button:hover {
+    background-color: grey; /* Optional: Change background color on hover */
   }
   

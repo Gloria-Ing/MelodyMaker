@@ -9,6 +9,7 @@ import Audio from './pages/Audio';
 import Video from './pages/Video';
 import Gallery from './pages/Gallery';
 
+
 import {BrowserRouter as Router,Routes, Route } from "react-router-dom";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/Audio" exact element={<Audio/>} />
         <Route path="/Video" exact element={<Video/>} />
         <Route path="/Gallery" exact element={<Gallery/>} />
+        
 
       </Routes>
       <Footer/>

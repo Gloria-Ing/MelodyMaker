@@ -1,6 +1,6 @@
 import React from 'react';
 import audio from "../images/video.jpg";
-import "../Styles/Audio.css";
+import "../Styles/Video.css";
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
 import { grey } from "@mui/material/colors";
@@ -21,6 +21,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function Audio() {
   return (
+    <div>
     <Box className='audio' sx={{ textAlign: 'center', padding: '20px' }}>
       <Typography variant="h4" gutterBottom>
         Video Music Production
@@ -41,9 +42,7 @@ function Audio() {
           </ListItem>
           <ListItem disableGutters>
             <Typography variant="body1">
-            
-               <b>● Filming: </b>High-definition filming with professional-grade cameras and equipment.
-
+              <b>● Filming: </b>High-definition filming with professional-grade cameras and equipment.
             </Typography>
           </ListItem>
           <ListItem disableGutters>
@@ -63,18 +62,20 @@ function Audio() {
           We Offer You Special Features Here
         </Typography>
         <Stack spacing={2}>
-          <Item><Typography variant="body1"><b>●	Creative Collaboration:</b> We work closely with artists, musicians, and filmmakers to understand their unique vision and bring it to fruition.</Typography></Item>
-          <Item><Typography variant="body1"><b>●	Cutting-Edge Technology: </b>Our studio is equipped with the latest software and hardware to deliver top-notch audio and video quality.</Typography></Item>
-          <Item><Typography variant="body1"><b>●	Diverse Projects:</b> From music videos and documentaries to commercials and live events, 3M handles a wide range of production projects.</Typography></Item>
+          <Item><Typography variant="body1"><b>● Creative Collaboration:</b> We work closely with artists, musicians, and filmmakers to understand their unique vision and bring it to fruition.</Typography></Item>
+          <Item><Typography variant="body1"><b>● Cutting-Edge Technology: </b>Our studio is equipped with the latest software and hardware to deliver top-notch audio and video quality.</Typography></Item>
+          <Item><Typography variant="body1"><b>● Diverse Projects:</b> From music videos and documentaries to commercials and live events, 3M handles a wide range of production projects.</Typography></Item>
         </Stack>
       </Box>
+      
       <div className='content'>
-       
-       <p>Located at Gisenyi, Rwanda, MelodyMakers Media welcomes clients from all over the world.</p>
-       <p>For inquiries, project quotes, or to book a session, please use the button below to contact us:</p>
-       <a href="tel:+250781959114" className="contact-button">Contact</a>
-     </div>
-      </Box>
+        <p>Located at Gisenyi, Rwanda, MelodyMakers Media welcomes clients from all over the world.</p>
+        <p>For inquiries, project quotes, or to book a session, please use the button below to contact us:</p>
+        <a href="tel:+250781959114" className="contact-button">Contact</a>
+      </div>
+    </Box>
+    
+    </div>
   );
 }
 

@@ -3,6 +3,7 @@
     background: #f4f4f4; /* Light grey background for a softer look */
     padding: 60px 0;
     text-align: center; /* Center-align all text in the section */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .section-title {
@@ -11,6 +12,7 @@
     color: #333;
     margin-bottom: 20px;
     text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .section-subtitle {
@@ -19,6 +21,7 @@
     margin-bottom: 40px;
     max-width: 800px;
     margin: 0 auto; /* Center the subtitle text */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
@@ -29,6 +32,7 @@ p {
     color: #666; /* Softer text color */
     font-size: 16px;
     line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Card Container */
@@ -37,6 +41,7 @@ p {
     flex-wrap: wrap; /* Allow items to wrap */
     padding: 20px;
     justify-content: space-around; /* Space items evenly */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Card Styling */
@@ -46,6 +51,7 @@ p {
     border-radius: 10px; /* Rounded corners for cards */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effects */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .card:hover {
@@ -62,6 +68,7 @@ p {
 
 .card-content {
     padding: 15px; /* Increase padding for better spacing */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .card-content h6 {
@@ -69,11 +76,13 @@ p {
     font-weight: 600;
     color: #333; /* Darker color for card titles */
     margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .card-content p {
     font-size: 14px;
     color: #777; /* Softer color for card text */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Responsive Design for Tablets and Smartphones */
